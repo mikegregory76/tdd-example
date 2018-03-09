@@ -4,13 +4,13 @@ using TddExample;
 namespace TddExampleTests
 {
     [TestClass()]
-    public class RedTests
+    public class UserTests
     {
         [TestMethod()]
         public void GetColorTest()
         {
-            IColor color = new Red();
-            Assert.AreEqual("red", color.GetColor());
+            IUser user = new User();
+            Assert.AreEqual("mgregory", user.GetUserId());
         }
     }
 }
